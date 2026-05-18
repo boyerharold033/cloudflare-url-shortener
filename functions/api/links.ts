@@ -86,7 +86,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
         body.short_code,
         body.alias ?? null,
         body.expires_at ?? null,
-        Date.now(),
+        currentDateTime, 
         clientId || null,
         body.og_image ?? null,
         body.og_title ?? null,
